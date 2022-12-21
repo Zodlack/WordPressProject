@@ -1,0 +1,331 @@
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+   font-family: 'Roboto', sans-serif;
+}
+
+.conteiner{
+    width: 1140px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.promo {
+    background:url('../img/bg.jpg') center center/cover no-repeat;
+    height: 800px;
+    padding: 39px 0 62px 0;
+}
+
+/* img -строчно-блочный элемент, поэтому margin:0 auto не выравнит
+ее по центру. Для этого нужно картинку сделать блочной, задав ей Display: block */
+.logo .logo_img{
+    margin: 0 auto;
+    display: block;
+
+}  
+.logo .logo_text{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight:300; /*жирность шрифта*/
+    line-height: 24px; /*расстояние м/д строчками(у нас одна ток)*/
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 14px;
+}
+
+h1{
+    margin-top: 53px;
+}
+
+h2.title{
+    margin-top: 30px;
+}
+
+.title{
+    color: #f9bf3b;
+    font-size: 41px;
+    font-weight: 900;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+ .simple .title_big{
+    color: #ffffff;
+    font-size:  80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 21px;
+ }
+
+ .promo .promo_text{
+    padding: 0 13px;
+    margin-top: 23px;
+    color: #ffffff;
+    font-size:  21px;
+    font-weight: 300;
+    text-align: center;
+    line-height: 28px;
+ }
+
+ .promo .promo_text span{
+    color: #f9bf3b;
+    font-weight: 700;
+ }
+ .promo .promo_btm, .bonys .btm_bonys{
+    height: 72px;
+    width: 313px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #2b9ec0;
+    margin: 73px auto;
+    display: block;
+    font-size: 21px;
+    font-weight: 400;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 rgba(0, 0 , 0 , 0.18);
+    border: 4px solid rgba(0, 0, 0, 0.23);
+    text-shadow: -1px -1px 0 rgb(0, 0, 0, 0.22);
+    cursor: pointer;
+    outline: none;  /*Чтобы при наведении на кнопку не было выделения кнопки*/
+ } 
+
+ .bonys .btm_bonys{
+   margin: 0 auto;
+   margin-top: 58px;
+ }
+
+ .more{
+    
+    margin-top: 73px;
+
+ }
+
+ .more .more_text{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+ }
+
+ .more .more_img{
+    display: block;
+    margin: 0  auto;
+    margin-top: 13px;
+ }
+
+ .waiting{
+    min-height: 604px; /*На тот случай,если заходят добавить тескт к имеющимуся или поменять на большую картинку*/
+    background-color: #efefef;
+    padding: 85px 0 75px 0;
+ }
+
+ .waiting .waiting_header, .finish .finish_header{
+    color: #252525;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+ }
+
+ .finish .finish_header{
+   color: #fff;
+ }
+
+ .waiting .waiting_divider, .finish .finish_divider{
+    width: 217px;
+    height: 4px;
+    background-color: #f9bf3b;
+    margin: 0 auto;
+    margin-top: 18px;
+ }
+
+ .waiting .waiting_subheader{
+    margin-top: 17px; 
+    color: #4a4a4a;
+    font-size: 23px;
+    font-weight: 400;
+    text-align: center;
+ }
+
+ .waiting .waiting_wrapper{
+
+   display: flex;
+   justify-content: space-between;
+    margin-top: 45px;
+ }
+
+ .waiting .waiting_wrapper .waiting_item{
+    width: 339px;
+    text-align: center;
+ }
+
+ .waiting .waiting_wrapper .waiting_item .waiting_img{
+    width: 100%;
+ }
+
+ .waiting .waiting_wrapper .waiting_item .waiting_descr{
+    margin-top: 33px;
+    color: #4a4a4a;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 21px; 
+ } 
+
+ .optimization{
+   min-height: 550px;
+   padding: 102px 0 107px 0;
+ }
+
+ .optimization .optimization_header{
+   margin-left: 391px;
+   color: #299cbd;
+   font-size: 29px;
+   font-weight: 900;
+   text-transform: uppercase;
+ } 
+
+ .optimization .optimization_text{
+   margin-top: 25px;
+   margin-left: 391px;
+   color: #4a4a4a;
+   font-size: 17px;
+   font-weight: 300;
+   line-height: 27px; 
+ }
+
+ .optimization .optimization_text span{
+   font-weight: 700;
+ }
+ 
+ .optimization .optimization_img{
+   position: absolute;
+   top:-54px;
+   left: -240px;
+   z-index: -1;
+ }
+
+ .finish{
+   min-height: 470px;
+   padding: 86px 0 79px 0;
+   background: url('../img/bg_education.jpg') center center/cover no-repeat;
+ }
+
+ .finish .finish_wrapper{
+   margin-top:42px;
+   display: flex; /*он себя ведеь как блочный элемент,поэтому ему тоже можно задавать (margin: 0 auto)*/
+   justify-content: space-between;
+ }
+ 
+ .finish .finish_wrapper .finish_item{
+   width: 208px;
+   text-align: center;
+ }
+
+ .finish .finish_wrapper .finish_item .finish_descr{
+   margin-top: 25px;
+   color: #efefef;
+   font-size: 17px;
+   font-weight: 300;
+   line-height: 20px;
+ }
+
+ .bonys{
+   min-height: 625px;
+   background-color: #efefef;
+   padding: 87px 0 85px 0;
+ }
+
+ .bonys .img_header{
+   margin: 0 auto;
+   display: block;
+ }
+
+ .bonys .bonys_text{
+   text-align: center;
+   font-size: 30px;
+   font-weight: 400;
+   line-height: 43px;
+   color: #252525;
+   margin-top: 49px;
+ }
+
+ .first_webinar{
+   min-height: 515px;
+   padding: 83px 0 68px 0;
+ }
+
+ .first_webinar .img_webinar{
+   margin: 0 auto;
+   display: block;
+ }
+
+.first_webinar .webinar_header{
+   margin-top: 45px;
+   text-align: center;
+   text-transform: uppercase;
+   font-weight: 400;
+   font-size: 30px;
+   color: #252525;
+}
+
+.first_webinar .webinar_text{
+   margin-top: 31px;
+   text-align: center;
+   color: #299cbd;
+   text-transform: uppercase;
+   font-size: 36px;
+   font-weight:900;
+}
+
+.first_webinar .webinar_subtext{
+   margin-top: 31px;
+   text-align: center;
+   color:#4a4a4a;
+   font-weight: 400;
+   font-size: 23px;
+}
+
+.futer{
+   min-height: 168px;
+   padding: 59px 0 68px 0;
+   background-color: #1a1a1a;
+}
+
+.futer .support .support_text, 
+.futer .support .policy_confi_text{
+   color: #888888;
+   text-decoration: underline;
+   font-size: 15px;
+   font-weight:300;
+}
+
+.futer .support a{
+   padding: 0 8px;
+}
+
+.futer span{
+   border-left: solid 2px  #888888;
+}
+
+
+.futer .support{
+   display: flex;
+   justify-content: center;
+}
+
+.futer .callUs{
+   text-align: center;
+   margin-top: 14px;
+   color:  #888888;
+   font-size: 15px;
+   font-weight: 300;
+}
+
+
